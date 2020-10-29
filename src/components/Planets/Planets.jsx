@@ -5,15 +5,25 @@ import './Planets.css';
 
 
 
-class Planets extends React.Component {
-    render() {
-        return (
-            <div className="Planets">
-                <Planet />
-            </div>
-        )
-    }
+const Planets = ({ planets, onPageChanged }) => {
+    return (
+        <div className="Planets">
+            {
+                planets.map(p => {
+                    return (
+                        <Planet
+                            key={p.name}
+                            name={p.name}
+                            climate={p.climate}
+                            population={p.population}
+                        />
+                    )
+                })
+            }
+        </div>
+    )
 }
+
 
 
 

@@ -1,11 +1,11 @@
 import './App.css';
-import Planets from './components/Planets/Planets';
+import PlanetsContainer from './components/PlanetsContainer';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Planets />
+        <PlanetsContainer />
       </div>
     </div>
   );

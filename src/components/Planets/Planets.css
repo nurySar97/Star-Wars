@@ -3,4 +3,6 @@
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    color: #cec743;
+    justify-content: center;
 }

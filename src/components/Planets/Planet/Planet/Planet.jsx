@@ -4,13 +4,13 @@ import './Planet.css';
 
 
 
-const Planet = ({ name, climate,population }) => {
+const Planet = ({ name, climate, population }) => {
     return (
-        <div className='Planet'>
-            <div>Name Planet: {name}</div>
+        <section className='Planet'>
+            <h1>{name}</h1>
             <div>Climate: {climate} </div>
             <div>Population: {population}</div>
-        </div>
+        </section>
     )
 }
 
