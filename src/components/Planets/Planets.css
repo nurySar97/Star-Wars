@@ -1,0 +1,6 @@
+.Planets {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
