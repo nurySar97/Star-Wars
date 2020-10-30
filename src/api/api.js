@@ -14,3 +14,12 @@ export const planetsApi = {
         )
     }
 }
+
+
+export const profileApi = {
+    getProfile: id => {
+        return (
+            instance.get(`planets/${id}/`)
+        )
+    }
+}

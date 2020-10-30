@@ -1,5 +1,14 @@
 .Planets {
     width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.Planets__container {
+    width: 100%;
+    height: 100%;
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;

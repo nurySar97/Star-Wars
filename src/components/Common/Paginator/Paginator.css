@@ -1,0 +1,43 @@
+.paginator {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #cec743;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+    background-color: transparent;
+}
+
+
+.cell:focus {
+    outline: none;
+}
+
+
+.cell:hover {
+    background-color: #cec743;
+}
+
+
+.activecell {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 1px solid #cec743;
+    background-color:  #cec743;
+    cursor: pointer;
+}
+
+
+.activecell:focus {
+    outline: none;
+}

@@ -1,0 +1,1 @@
+export let Capitalize = word => word.split(", ").map(w=>w.split("")[0].toLocaleUpperCase() + w.slice(1)).join(", ")

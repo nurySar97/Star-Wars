@@ -1,5 +1,6 @@
 import thunk from "redux-thunk";
 import planetsReducer from "../reducers/planets-reducer";
+import profileReducer from "../reducers/profile-reducer";
 
 
 
@@ -7,7 +8,8 @@ import planetsReducer from "../reducers/planets-reducer";
 const { createStore, combineReducers, applyMiddleware } = require("redux");
 
 let rootReducers = combineReducers({
-    planetsData: planetsReducer
+    planetsData: planetsReducer,
+    profileData: profileReducer
 })
 
 

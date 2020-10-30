@@ -1,8 +1,78 @@
-.Planet {
+.planet {
     width: 100%;
-    max-width: 300px;
-    height: 400px;
+    max-width: 350px;
+    height: 520px;
     border: 1px solid #cec743;
     margin: 30px;
     background-color: #3a3d49;
+    text-decoration: none;
+    color: #cec743;
+    border-radius: 10px;
+    transition: transform .2s linear;
+}
+
+
+.planet:hover {
+    transform: scale(0.95);
+}
+
+.planet h1 {
+    font-size: 40px;
+}
+
+.planet__img {
+    width: 100%;
+    height: 215px;
+}
+
+.planet__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+
+.planet__climate {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+
+.planet__climate span {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+
+
+
+.climate__title {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.planet__population {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+
+
+.planet__population span {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+
+
+.population__title {
+    font-size: 30px;
+    letter-spacing: 3px;
 }
