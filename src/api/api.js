@@ -21,5 +21,10 @@ export const profileApi = {
         return (
             instance.get(`planets/${id}/`)
         )
+    },
+    getResident: id =>{
+        return (
+            instance.get(`people/${id}/`)
+        )
     }
 }

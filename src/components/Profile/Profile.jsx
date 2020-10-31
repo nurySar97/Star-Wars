@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-const Profile = ({name}) => {
+const Profile = ({ name, residents }) => {
     return (
         <h1>
             {name}

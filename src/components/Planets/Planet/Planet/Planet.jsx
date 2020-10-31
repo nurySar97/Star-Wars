@@ -29,7 +29,7 @@ const Planet = ({ name, climate, population, id }) => {
                         <b>Population</b>
                     </div>
                     <div>
-                        {(population !== 'unknown') ? population : "Nobody lives here"}
+                        {(population !== 'unknown') ? (population === "0") ? "No residents" : population : "No information"}
                     </div>
                 </div>
             </section>
