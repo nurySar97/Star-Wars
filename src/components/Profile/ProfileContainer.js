@@ -16,7 +16,7 @@ class ProfileContainer extends React['Component'] {
         this.props.clearResidents()
     }
     componentDidUpdate(prevProps) {
-        if (JSON.stringify(prevProps.profile) !== JSON.stringify(this.props.profile)) {
+        if (compareObjects(prevProps.profile, this.props.profile)) {
             let idResidents = this.props.profile.residents.map(a => a.split("/")[5])
             idResidents.forEach(element => {
                 this.props.getResidentThunk(element)
