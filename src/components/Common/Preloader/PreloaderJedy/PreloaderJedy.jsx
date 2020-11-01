@@ -5,7 +5,7 @@ import './PreloaderJedy.css'
 const PreloaderJedy = () => {
     return (
         <div className={"preloaderJedy"}>
-            <img className={"preloaderJedy__img"} src={jedy} alt=""/>
+            <img className={"preloaderJedy__img"} src={jedy} alt="" />
         </div>
     )
 }

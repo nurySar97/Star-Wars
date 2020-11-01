@@ -13,12 +13,7 @@ const appReducer = (state = initialState, action) => {
     }
 }
 
-
 const setIsOpenAC = value => ({ type: SET_IS_OPEN, payload: value })
-
-
-
-
 
 export const openAppThunk = value => dispatch => {
     new Promise(resolve => {

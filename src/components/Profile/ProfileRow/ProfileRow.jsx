@@ -7,10 +7,10 @@ const ProfileRow = (title, value) => {
         <tbody className="profile__tbody">
             <tr className="profile__row">
                 <td className="profile__name">
-                    {title}
+                    {title !== "unknown" ? title : "No information"}
                 </td>
                 <td className="profile__amount">
-                    {value}
+                    {(value !== "unknown" && "Unknown" !== value) ? value : "No information"}
                 </td>
             </tr>
         </tbody>

@@ -5,8 +5,6 @@ const instance = Axios.create({
 })
 
 
-
-
 export const planetsApi = {
     getPlanets: currentPage => {
         return (
@@ -22,7 +20,7 @@ export const profileApi = {
             instance.get(`planets/${id}/`)
         )
     },
-    getResident: id =>{
+    getResident: id => {
         return (
             instance.get(`people/${id}/`)
         )

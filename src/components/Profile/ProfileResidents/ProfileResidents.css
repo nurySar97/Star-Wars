@@ -1,0 +1,64 @@
+.resident {
+    color: #cec743;
+    width: 40%;
+    min-width: 200px;
+    height: 100%;
+    padding-left: 60px;
+}
+
+
+.resident__btn {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #cec743;
+    border: 1px solid #cec743;
+    cursor: pointer;
+    transition: color .2s linear, background-color .2s linear;
+}
+
+
+
+.resident__btn:focus {
+    outline: none;
+}
+
+
+.resident__btn:hover {
+    background-color: #cec743;
+    color: black;
+}
+
+.ReactCollapse--collapse {
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: height 500ms;
+}  
+
+
+.resident__informations {
+    width: 100%;
+}
+
+
+
+.resident__information {
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+.resident__value {
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+
+.resident__key {
+    font-size: 18px;
+}

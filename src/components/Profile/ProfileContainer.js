@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
 import Profile from './Profile';
-import { clearResidents, getPlanetProfileThunk, getResidentThunk } from './../../reducers/profile-reducer'
-import { compareObjects } from '../../helpers/CompareObjects';
-
+import { clearResidents, getPlanetProfileThunk } from './../../reducers/profile-reducer'
+import { motion } from 'framer-motion';
 
 
 
@@ -14,22 +13,22 @@ class ProfileContainer extends React['Component'] {
         let id = this.props.match.params.id
         this.props.getPlanetProfileThunk(id)
         this.props.clearResidents()
-    }
-    componentDidUpdate(prevProps) {
-        if (compareObjects(prevProps.profile, this.props.profile)) {
-            let idResidents = this.props.profile.residents.map(a => a.split("/")[5])
-            idResidents.forEach(element => {
-                this.props.getResidentThunk(element)
-            });
-        }
-    }
-
-    shouldComponentUpdate(nextProps) {
-        return (compareObjects(nextProps, this.props)) ? true : false
+        window.scrollTo(0, 0)
     }
     render() {
         return (
-            <Profile {...this.props.profile} />
+            <motion.div
+                exit={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{ duration: 1.5 }}
+            >
+                <Profile 
+                    {...this.props.profile} 
+                    residentsData={this.props.residentsData}
+                    isLoaded={this.props.isLoaded}
+                />
+            </motion.div>
         )
     }
 }
@@ -37,7 +36,9 @@ class ProfileContainer extends React['Component'] {
 
 const mapStateToProps = state => {
     return {
-        profile: state.profileData.profile
+        profile: state.profileData.profile,
+        residentsData: state.profileData.residents,
+        isLoaded: state.profileData.isLoaded
     }
 }
 
@@ -45,5 +46,5 @@ const mapStateToProps = state => {
 
 
 export default compose(
-    connect(mapStateToProps, { getPlanetProfileThunk, getResidentThunk, clearResidents }),
+    connect(mapStateToProps, { getPlanetProfileThunk, clearResidents }),
     withRouter)(ProfileContainer);

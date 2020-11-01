@@ -6,6 +6,7 @@ import Opening from './components/Common/Opening';
 import PlanetsContainer from './components/Planets/PlanetsContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
 import { openAppThunk } from './reducers/app-reducer';
+import { AnimatePresence } from 'framer-motion'
 
 class App extends React.Component {
   componentDidMount() {
@@ -18,10 +19,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="container">
-          <Switch>
-            <Route exact path='/' render={() => <PlanetsContainer />} />
-            <Route path='/profile/:id' render={() => <ProfileContainer />} />
-          </Switch>
+          <AnimatePresence>
+            <Switch>
+              <Route exact path='/' render={() => <PlanetsContainer />} />
+              <Route path='/profile/:id' render={() => <ProfileContainer />} />
+            </Switch>
+          </AnimatePresence>
         </div>
       </div>
     );

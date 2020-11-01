@@ -10,9 +10,10 @@ import './Planets.css';
 const Planets = ({ planets, onPageChanged, totalPlanetCount, currentPage, isFetching }) => {
     return (
         <div className={"Planets"}>
+            <div className={"Planets__title"}>Stars</div>
             {
                 isFetching && <PreloaderJedy />
-            } 
+            }
             <Paginator
                 onPageChanged={onPageChanged}
                 totalPlanetCount={totalPlanetCount}
@@ -22,7 +23,7 @@ const Planets = ({ planets, onPageChanged, totalPlanetCount, currentPage, isFetc
                 {
                     planets.map(p => {
 
-                        if(p.name === 'unknown'){
+                        if (p.name === 'unknown') {
                             return ""
                         }
                         return (
@@ -37,6 +38,11 @@ const Planets = ({ planets, onPageChanged, totalPlanetCount, currentPage, isFetc
                     })
                 }
             </div>
+            <Paginator
+                onPageChanged={onPageChanged}
+                totalPlanetCount={totalPlanetCount}
+                currentPage={currentPage}
+            />
         </div>
     )
 }
