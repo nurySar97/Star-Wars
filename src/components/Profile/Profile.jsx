@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Capitalize } from '../../helpers/Capitalize';
 import PreloaderJedy from '../Common/Preloader/PreloaderJedy/PreloaderJedy';
 import './Profile.css';
@@ -23,6 +24,9 @@ const Profile = ({
         <>
             <div className="profile">
                 <div className="profile__container">
+                    <NavLink to="/planets" className={"profile__backbtn"} >
+                        <i className="far fa-arrow-alt-circle-left"></i>
+                    </NavLink>
                     <div className="profile__title">
                         {name}
                     </div>

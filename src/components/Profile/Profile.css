@@ -4,6 +4,22 @@
     min-height: 101vh;
     display: flex;
     justify-content: center;
+    
+}
+
+
+
+.profile__backbtn {
+    position: absolute;
+    left: 50px;
+    font-size: 55px;
+    color: #cec743;
+    transition: transform .2s linear;
+}
+
+
+.profile__backbtn:hover {
+    transform: scale(0.9);
 }
 
 
@@ -13,7 +29,8 @@
     max-width: 900px;
     height: 100%;
     min-height: 101vh;
-    padding: 0 20px 20px 20px;
+    padding: 40px 20px 20px;
+    position: relative;
 }
 
 
@@ -66,4 +83,21 @@
     text-align: center;
     color: #cec743;
     font-size: 24px;
+}
+
+
+
+@media(max-width: 576px){
+    .profile__backbtn {
+        position: absolute;
+        left: 30px;
+        font-size: 40px;
+        color: #cec743;
+        transition: transform .2s linear;
+    }
+    
+    
+    .profile__backbtn:hover {
+        transform: scale(0.9);
+    }
 }

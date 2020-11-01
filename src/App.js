@@ -23,6 +23,12 @@ class App extends React.Component {
             <Switch>
               <Route exact path='/' render={() => <PlanetsContainer />} />
               <Route path='/profile/:id' render={() => <ProfileContainer />} />
+              <Route path='/planets' render={()=><PlanetsContainer />} />
+              <Route
+                  key={"*"}
+                  path='*'
+                  render={() => <div dangerouslySetInnerHTML={{ __html: "404 NOT FOUND" }} />}
+                />
             </Switch>
           </AnimatePresence>
         </div>
