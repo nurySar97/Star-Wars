@@ -8,18 +8,7 @@ import ProfileRow from './ProfileRow/ProfileRow';
 
 
 
-const Profile = ({
-    name,
-    rotation_period,
-    diameter,
-    climate,
-    gravity,
-    terrain,
-    population,
-    residentsData,
-    isLoaded }) => {
-    let Climate = climate ? Capitalize(climate) : climate
-    let Terrain = terrain ? Capitalize(terrain) : terrain
+const Profile = props => {
     return (
         <>
             <div className="profile">
@@ -28,26 +17,39 @@ const Profile = ({
                         <i className="far fa-arrow-alt-circle-left"></i>
                     </NavLink>
                     <div className="profile__title">
-                        {name}
+                        {props.name}
                     </div>
                     <table className="profile__table">
-                        {ProfileRow('Rotation Period', rotation_period)}
-                        {ProfileRow('Diameter', diameter)}
-                        {ProfileRow('Climate', Climate)}
-                        {ProfileRow('Gravity', gravity)}
-                        {ProfileRow('Terrain', Terrain)}
-                        {ProfileRow('Population', population)}
+                        {
+                            !!props.climate
+                            && Object.keys(props).map(element => {
+                                if (
+                                    element === 'isLoaded'
+                                    || element === 'residentsData'
+                                    || element === 'created'
+                                    || element === 'edited'
+                                    || element === 'films'
+                                    || element === 'residents'
+                                    || element === 'url'
+                                    || element === 'name'
+
+                                ) return undefined
+
+                                let keyWord = Capitalize(element.split("_").join(" "))
+                                return <ProfileRow key={element} keyWord={keyWord} value={props[element]} />
+                            })
+                        }
                     </table>
                     <div className="profile__residents">
                         Residents:
                     </div>
                     <div className="residents">
                         {
-                            isLoaded ? <PreloaderJedy />
+                            props.isLoaded ? <PreloaderJedy />
                                 :
-                                residentsData.length
+                                props.residentsData.length
                                     ?
-                                    residentsData.map(a => {
+                                    props.residentsData.map(a => {
                                         return <ProfileResidents key={a.name} {...a} />
                                     })
                                     :
