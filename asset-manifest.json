@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Star-Wars/static/css/main.39f54c95.chunk.css",
-    "main.js": "/Star-Wars/static/js/main.4d6efce8.chunk.js",
-    "main.js.map": "/Star-Wars/static/js/main.4d6efce8.chunk.js.map",
-    "runtime-main.js": "/Star-Wars/static/js/runtime-main.8d46eb15.js",
-    "runtime-main.js.map": "/Star-Wars/static/js/runtime-main.8d46eb15.js.map",
-    "static/js/2.2d7b97d2.chunk.js": "/Star-Wars/static/js/2.2d7b97d2.chunk.js",
-    "static/js/2.2d7b97d2.chunk.js.map": "/Star-Wars/static/js/2.2d7b97d2.chunk.js.map",
-    "index.html": "/Star-Wars/index.html",
-    "static/css/main.39f54c95.chunk.css.map": "/Star-Wars/static/css/main.39f54c95.chunk.css.map",
-    "static/js/2.2d7b97d2.chunk.js.LICENSE.txt": "/Star-Wars/static/js/2.2d7b97d2.chunk.js.LICENSE.txt",
-    "static/media/Jedi.9d65cff0.gif": "/Star-Wars/static/media/Jedi.9d65cff0.gif",
-    "static/media/starWarsLogo.d02cf214.png": "/Star-Wars/static/media/starWarsLogo.d02cf214.png"
+    "main.css": "/star-wars-website/static/css/main.39f54c95.chunk.css",
+    "main.js": "/star-wars-website/static/js/main.b0e9f27e.chunk.js",
+    "main.js.map": "/star-wars-website/static/js/main.b0e9f27e.chunk.js.map",
+    "runtime-main.js": "/star-wars-website/static/js/runtime-main.67e90557.js",
+    "runtime-main.js.map": "/star-wars-website/static/js/runtime-main.67e90557.js.map",
+    "static/js/2.2d7b97d2.chunk.js": "/star-wars-website/static/js/2.2d7b97d2.chunk.js",
+    "static/js/2.2d7b97d2.chunk.js.map": "/star-wars-website/static/js/2.2d7b97d2.chunk.js.map",
+    "index.html": "/star-wars-website/index.html",
+    "static/css/main.39f54c95.chunk.css.map": "/star-wars-website/static/css/main.39f54c95.chunk.css.map",
+    "static/js/2.2d7b97d2.chunk.js.LICENSE.txt": "/star-wars-website/static/js/2.2d7b97d2.chunk.js.LICENSE.txt",
+    "static/media/Jedi.9d65cff0.gif": "/star-wars-website/static/media/Jedi.9d65cff0.gif",
+    "static/media/starWarsLogo.d02cf214.png": "/star-wars-website/static/media/starWarsLogo.d02cf214.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d46eb15.js",
+    "static/js/runtime-main.67e90557.js",
     "static/js/2.2d7b97d2.chunk.js",
     "static/css/main.39f54c95.chunk.css",
-    "static/js/main.4d6efce8.chunk.js"
+    "static/js/main.b0e9f27e.chunk.js"
   ]
 }
