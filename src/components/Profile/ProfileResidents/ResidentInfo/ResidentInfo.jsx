@@ -1,8 +1,6 @@
 import React from 'react';
 import './../ProfileResidents.css'
 
-
-
 const ResidentInfo = ({ keyWord, value }) => {
     return (
         <div className="resident__information">
@@ -15,7 +13,5 @@ const ResidentInfo = ({ keyWord, value }) => {
         </div>
     )
 }
-
-
 
 export default ResidentInfo;

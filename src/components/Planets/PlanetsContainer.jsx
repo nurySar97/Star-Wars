@@ -4,9 +4,6 @@ import { getPlanetsThunk } from '../../reducers/planets-reducer';
 import Planets from './Planets';
 import { motion } from 'framer-motion'
 
-
-
-
 class PlanetsContainer extends React.Component {
     componentDidMount() {
         this.props.getPlanetsThunk(this.props.currentPage)
@@ -36,7 +33,6 @@ class PlanetsContainer extends React.Component {
     }
 }
 
-
 const mapStateToProps = state => {
     return {
         currentPage: state.planetsData.currentPage,
@@ -45,7 +41,5 @@ const mapStateToProps = state => {
         isFetching: state.planetsData.isFetching
     }
 }
-
-
 
 export default connect(mapStateToProps, { getPlanetsThunk })(PlanetsContainer);

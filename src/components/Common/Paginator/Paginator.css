@@ -3,8 +3,6 @@
     justify-content: center;
 }
 
-
-
 .cell {
     width: 40px;
     height: 40px;
@@ -16,16 +14,13 @@
     background-color: transparent;
 }
 
-
 .cell:focus {
     outline: none;
 }
 
-
 .cell:hover {
     background-color: #cec743;
 }
-
 
 .activecell {
     width: 42px;
@@ -37,11 +32,9 @@
     cursor: pointer;
 }
 
-
 .activecell:focus {
     outline: none;
 }
-
 
 @media(max-width: 576px) {
     .cell {
@@ -54,7 +47,6 @@
         transition: background-color .2s linear;
         background-color: transparent;
     }
-
 
     .activecell {
         width: 20px;

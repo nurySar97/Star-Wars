@@ -4,9 +4,6 @@ import PreloaderJedy from '../Common/Preloader/PreloaderJedy/PreloaderJedy';
 import Planet from './Planet/Planet/Planet';
 import './Planets.css';
 
-
-
-
 const Planets = ({ planets, onPageChanged, totalPlanetCount, currentPage, isFetching }) => {
     return (
         <div className={"Planets"}>
@@ -46,8 +43,5 @@ const Planets = ({ planets, onPageChanged, totalPlanetCount, currentPage, isFetc
         </div>
     )
 }
-
-
-
 
 export default Planets;

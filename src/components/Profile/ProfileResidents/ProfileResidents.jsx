@@ -4,8 +4,6 @@ import { Collapse } from 'react-collapse';
 import { Capitalize } from '../../../helpers/Capitalize';
 import ResidentInfo from './ResidentInfo/ResidentInfo';
 
-
-
 const ProfileResidents = props => {
     const [showResidentInfo, setResidentInfo] = useState([])
     const onOpenHandleClick = name => {
@@ -53,7 +51,5 @@ const ProfileResidents = props => {
         </div>
     )
 }
-
-
 
 export default ProfileResidents

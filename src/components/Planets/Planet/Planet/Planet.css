@@ -12,7 +12,6 @@
     transition: transform .2s linear;
 }
 
-
 .planet:hover {
     transform: scale(0.95);
     box-shadow: 0 0 10px #cec743;
@@ -33,7 +32,6 @@
     border-radius: 10px 10px 0 0 ;
 }
 
-
 .planet__climate {
     display: flex;
     justify-content: flex-start;
@@ -43,14 +41,10 @@
     flex-direction: column;
 }
 
-
 .planet__climate span {
     font-weight: 700;
     margin-right: 10px;
 }
-
-
-
 
 .climate__title {
     font-size: 30px;
@@ -65,14 +59,10 @@
     flex-direction: column;
 }
 
-
-
 .planet__population span {
     font-weight: 700;
     margin-right: 10px;
 }
-
-
 
 .population__title {
     font-size: 30px;

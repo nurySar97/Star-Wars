@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { Capitalize } from '../../../../helpers/Capitalize';
 import './Planet.css';
 
-
-
-
 const Planet = ({ name, climate, population, id }) => {
     return (
         <NavLink className='planet' to={`/profile/${id}`}>
@@ -37,7 +34,5 @@ const Planet = ({ name, climate, population, id }) => {
 
     )
 }
-
-
 
 export default Planet;

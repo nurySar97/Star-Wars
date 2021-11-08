@@ -1,28 +1,20 @@
-import * as Axios from 'axios';
+import * as Axios from "axios";
 
 const instance = Axios.create({
-    baseURL: 'https://swapi.dev/api/'
-})
-
+  baseURL: "https://swapi.dev/api/",
+});
 
 export const planetsApi = {
-    getPlanets: currentPage => {
-        return (
-            instance.get(`planets/?page=${currentPage}`)
-        )
-    }
-}
-
+  getPlanets: (currentPage) => {
+    return instance.get(`planets/?page=${currentPage}`);
+  },
+};
 
 export const profileApi = {
-    getProfile: id => {
-        return (
-            instance.get(`planets/${id}/`)
-        )
-    },
-    getResident: id => {
-        return (
-            instance.get(`people/${id}/`)
-        )
-    }
-}
+  getProfile: (id) => {
+    return instance.get(`planets/${id}/`);
+  },
+  getResident: (id) => {
+    return instance.get(`people/${id}/`);
+  },
+};

@@ -1,8 +1,13 @@
 {
-  "homepage": "http://nurySar97.github.io/Star-Wars",
+  "homepage": "http://nurySar97.github.io/star-wars-website",
   "name": "starwars",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Murmuhammet",
+    "url": " https://nurysar97.github.io/personal-portfolio/",
+    "email": "nsaryyev9797@gmail.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
